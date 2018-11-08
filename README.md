@@ -1,5 +1,21 @@
 # deck
 
+## Using virtualenv
+
+### Activation
+
+```
+> cd code/deck-of-cards
+> source venv/bin/activate
+
+```
+
+### Deactivation
+
+```
+> deactivate
+```
+
 ## War
 
 1. shuffle a deck
