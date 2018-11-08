@@ -10,19 +10,23 @@ def create_deck():
     suits = ['heart', 'diamond', 'club', 'spade']
 
     # Create all the ranks, numbers first, then face cards.
-    ranks = []
-    for n in range(2, 11):
-        ranks.append(str(n))
+    ranks = [str(n) for n in range(2, 11)]  # this is a list comprehension
+    # The above does the same thing as this code below:
+    # ranks = []
+    # for n in range(2, 11):
+    #     ranks.append(str(n))
 
     ranks += ['jack', 'queen', 'king', 'ace']
     # Same as: ranks = ranks + ['jack', 'queen', 'king', 'ace']
 
+    # Create all the values.
+    values = range(2, 15)
+
     # Create a full deck of one card of each rank for each suit.
     deck = []
     for s in suits:
-        for r in ranks:
-            # TODO: add a 'value' field for each card that is an integer from 2 to 13.
-            card = {'suit': s, 'rank': r}
+        for v, r in enumerate(ranks, start=2):
+            card = {'suit': s, 'rank': r, 'value': v}
             deck.append(card)
 
     return deck
