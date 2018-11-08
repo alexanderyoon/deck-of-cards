@@ -7,7 +7,6 @@
 ```
 > cd code/deck-of-cards
 > source venv/bin/activate
-
 ```
 
 ### Deactivation
