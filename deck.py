@@ -34,6 +34,9 @@ def create_deck():
 def shuffle_deck(deck, hands=None, shuffle_count=200):
     """Shuffle the deck.
 
+    `hands` is an optional list of hands, where each hand is a list of
+    cards. Any hands passed in will be added back to the deck before
+    shuffling. 
     """
     # Shortcut for: if hands is not None:
     if hands:
@@ -58,7 +61,8 @@ def shuffle_deck(deck, hands=None, shuffle_count=200):
 
 def deal_deck(deck, hand_count, cards_per_hand=None):
     """Deal the deck into the specified number of hands (minimum of 2).
-
+    
+    Returns a list of hands, where each hand is a list of cards.
     """
     #assert(deck is list)
     assert(hand_count >= 2)
