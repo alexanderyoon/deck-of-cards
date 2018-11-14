@@ -3,9 +3,7 @@ from pprint import pprint
 
 def create_deck():
     """Create a list of 52 cards, where each card is a dictionary with 2
-    fields: 'suit' and 'rank'.
-
-    """
+    fields: 'suit' and 'rank'."""
     # Create all the suits.
     suits = ['heart', 'diamond', 'club', 'spade']
 
@@ -78,7 +76,6 @@ def deal_deck(deck, hand_count, cards_per_hand=None):
     else:
         cards_to_deal = len(deck)
     print('{} cards to deal.'.format(cards_to_deal))
-    
     i = 0
     while cards_to_deal > 0:
         card = deck.pop()
