@@ -93,7 +93,7 @@ while len(user_hand) > 0 and len(computer_hand) > 0:
 				computer_hand.append(computer_knight)
 				print('Your deck is {} cards long'.format(len(user_hand)))
 				print('The computer\'s deck is {} cards long'.format(len(computer_hand)))
-	elif cmd == 'q'
+	elif cmd == 'q':
 		print('Goodbye.')
 		break
 	else:
