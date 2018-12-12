@@ -91,7 +91,6 @@ def deal_deck(deck, hand_count, cards_per_hand=None):
 
     return hands
 
-print('__name__ = ' + __name__)
 
 if __name__ == '__main__':
     print('Here is a deck:')
